@@ -2,7 +2,6 @@
 
 Repo that contains various assets (such as templates, css, images, etc.) that can be shared across the docs properties.
 
-
 ## Copyright
 
 © Copyright 2020-present, Inrupt Inc.
