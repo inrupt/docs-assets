@@ -1,0 +1,11 @@
+/* Override the Prev and Next buttons styles */
+
+.prev-next-bottom {
+   margin-top: 40px;
+}
+
+.prev-next-bottom a.left-prev, .prev-next-bottom a.right-next {
+   border-radius: 20px;
+   font-size: 90%;
+}
+

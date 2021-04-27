@@ -1,0 +1,18 @@
+<div class="btn-group version-sidebar">
+  <button type="button" class="version-button dropdown-toggle" data-toggle="dropdown">
+    {% set latest = theme_versions_list|selectattr('isLatest')|map(attribute='version')|first|e %}
+    Version {{ theme_version }} {% if latest == theme_version %} (Latest) {% endif %}
+  </button>
+  <ul class="dropdown-menu" role="menu">
+    {% for v in theme_versions_list %}
+    <li>
+      <a class="version-selector" {% if pagename=='index' %} {% if v.isLatest %} href="{{ theme_ess_docs }}latest/" {%
+        else %} href="{{ theme_ess_docs }}{{ v.version }}/" {% endif %} {% else %} {% if v.isLatest %}
+        href="{{ theme_ess_docs }}latest/{{pagename}}/" {% else %}
+        href="{{ theme_ess_docs }}{{ v.version }}/{{pagename}}/" {% endif %} {% endif %}>
+        Version {{ v.version|e }} {% if v.isLatest %} (Latest) {% endif %}
+      </a>
+    </li>
+    {% endfor %}
+  </ul>
+</div>

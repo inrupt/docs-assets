@@ -1,0 +1,51 @@
+.header-style, h1, h2, h3, h4, h5, h6 {
+   font-family: 'Lato', Open Sans, sans-serif;
+}
+
+h3 {
+   font-size: 1.65em;
+}
+
+body {
+   font-family: 'Lato', Open Sans, sans-serif;
+}
+
+@import ("inrupt-top-navbar.css");
+
+@import ("inrupt-breadcrumbs.css");
+
+@import ("inrupt-tables.css");
+
+@import ("inrupt-tabs.css");
+
+@import ("inrupt-code.css");
+
+@import ("inrupt-left-sidebar.css");
+
+@import ("inrupt-version-dropdown.css");
+
+@import ("inrupt-admonitions.css");
+
+@import ("inrupt-options.css");
+
+@import ("inrupt-guilabels.css");
+
+@import ("inrupt-prev-next.css");
+
+/* Using Caption for left hand nav - doc title caption */
+p.caption a {
+   text-align: left;
+   color: rgba(0,0,0,.65);
+}
+
+.footer {
+   text-align: center;
+}
+
+@media (min-width: 978px) {
+   .navbar-expand-lg .navbar-nav .nav-link {
+      padding-right: 1rem;
+      padding-left: 1rem;
+   }
+}
+

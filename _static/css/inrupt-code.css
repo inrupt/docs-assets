@@ -1,0 +1,29 @@
+/* Need for inline - otherwise, default is hot pink */
+
+.pre {
+   color: black;
+}
+
+/* Need for inline - to also highlight white spaces */
+
+:not(pre)>*>code,
+:not(pre)>code {
+    background-color:rgba(220,220,220,.4); 
+}
+
+/* Adding background color to code blocks */
+
+.highlight {
+   background: rgba(0,0,0,.10);
+}
+
+/* Adding a border to shell and javascript code blocks */
+
+.highlight-sh, .highlight-javascript {
+   border-left: 5px solid #494747;
+}
+
+/* Hiding copybutton if code-block is none */
+div.highlight-none > div > a.copybtn {
+   display: none;
+}
