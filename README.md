@@ -13,8 +13,12 @@ Our docs use Sphinx and the extensions listed below.  Not all docs use all the e
 
 ### Sphinx
 
+The documentation uses [Sphinx](https://www.sphinx-doc.org/en/master/) 
+
 Copyright (c) 2007-2020 by the Sphinx team (see AUTHORS file).
 All rights reserved.
+
+See [Sphinx License](https://github.com/sphinx-doc/sphinx/blob/4.x/LICENSE). 
 
 ### sphinx-tabs
 
@@ -104,7 +108,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 ### myst-parser
 
-The documentation uses [myst-parser](https://github.com/executablebooks/myst-parser), which is under the MIT License:
+The JS API documentation uses [myst-parser](https://github.com/executablebooks/myst-parser), which is under the MIT License:
 
 MIT License
 
