@@ -6,10 +6,10 @@
   <ul class="dropdown-menu" role="menu">
     {% for v in theme_versions_list %}
     <li>
-      <a class="version-selector" {% if pagename=='index' %} {% if v.isLatest %} href="{{ theme_ess_docs }}latest/" {%
-        else %} href="{{ theme_ess_docs }}{{ v.version }}/" {% endif %} {% else %} {% if v.isLatest %}
-        href="{{ theme_ess_docs }}latest/{{pagename}}/" {% else %}
-        href="{{ theme_ess_docs }}{{ v.version }}/{{pagename}}/" {% endif %} {% endif %}>
+      <a class="version-selector" {% if pagename=='index' %} {% if v.isLatest %} href="https://docs.inrupt.com/{{ theme_docs_project }}/latest/" {%
+        else %} href="https://docs.inrupt.com/{{ theme_docs_project }}/{{ v.version }}/" {% endif %} {% else %} {% if v.isLatest %}
+        href="https://docs.inrupt.com/{{ theme_docs_project }}/latest/{{pagename}}/" {% else %}
+        href="https://docs.inrupt.com/{{ theme_docs_project }}/{{ v.version }}/{{pagename}}/" {% endif %} {% endif %}>
         Version {{ v.version|e }} {% if v.isLatest %} (Latest) {% endif %}
       </a>
     </li>
