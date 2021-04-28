@@ -15,9 +15,8 @@
   <script type="text/javascript"
     src="https://inrupt.atlassian.net/s/d41d8cd98f00b204e9800998ecf8427e-T/-egccmf/b/24/a44af77267a987a660377e5c46e0fb64/_/download/batch/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector.js?locale=en-US&collectorId=41592d74"></script>
 
-  <!-- Make feedback for latest -->
-
   {%- if theme_versioned|tobool %}
+  <!-- Make feedback for latest version-->
   <script type="text/javascript">
     window.ATL_JQ_PAGE_PROPS = $.extend(window.ATL_JQ_PAGE_PROPS, {
       fieldValues: {
@@ -32,7 +31,9 @@
         description: 'On page: https://docs.inrupt.com/{{theme_docs_project}}/{{pagename|e}}/ \n'
       }
     });
+  </script>
   {%- endif -%}
+
   <!-- Matomo -->
   <script type="text/javascript">
     var _paq = window._paq = window._paq || [];
@@ -52,9 +53,9 @@
   </script>
   <!-- End Matomo Code -->
 
-  <!-- Make latest the canonical for versioned documents -->
 
   {%- if theme_versioned|tobool %}
+    <!-- Make latest the canonical for versioned documents -->
     {%- if pagename == 'index' %}
     <link rel="canonical" href="https://docs.inrupt.com/{{theme_docs_project}}/latest/" />
     {%- else %}
