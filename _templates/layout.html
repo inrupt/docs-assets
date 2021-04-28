@@ -3,7 +3,7 @@
 {% set css_files = css_files + [ "_static/css/inrupt.css" ] %}
 
 {%- block extrahead %}
-  {% if theme_robots_index %}
+  {% if theme_robots_index|tobool %}
   <meta name="robots" content="index" />
   {% else %}
   <meta name="robots" content="noindex,nofollow" />
@@ -11,8 +11,13 @@
 
   {{ super() }}
 
+
   <script type="text/javascript"
     src="https://inrupt.atlassian.net/s/d41d8cd98f00b204e9800998ecf8427e-T/-egccmf/b/24/a44af77267a987a660377e5c46e0fb64/_/download/batch/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector.js?locale=en-US&collectorId=41592d74"></script>
+
+  <!-- Make feedback for latest -->
+
+  {%- if theme_versioned|tobool %}
   <script type="text/javascript">
     window.ATL_JQ_PAGE_PROPS = $.extend(window.ATL_JQ_PAGE_PROPS, {
       fieldValues: {
@@ -20,7 +25,14 @@
       }
     });
   </script>
-
+  {%- else %}
+  <script type="text/javascript">
+    window.ATL_JQ_PAGE_PROPS = $.extend(window.ATL_JQ_PAGE_PROPS, {
+      fieldValues: {
+        description: 'On page: https://docs.inrupt.com/{{theme_docs_project}}/{{pagename|e}}/ \n'
+      }
+    });
+  {%- endif -%}
   <!-- Matomo -->
   <script type="text/javascript">
     var _paq = window._paq = window._paq || [];
@@ -40,9 +52,9 @@
   </script>
   <!-- End Matomo Code -->
 
-  <!-- Make latest the canonical -->
+  <!-- Make latest the canonical for versioned documents -->
 
-  {%- if theme_canonical %}
+  {%- if theme_versioned|tobool %}
     {%- if pagename == 'index' %}
     <link rel="canonical" href="https://docs.inrupt.com/{{theme_docs_project}}/latest/" />
     {%- else %}
@@ -64,7 +76,7 @@
     {% endif %}
   </div>
 
-  {%- if theme_banner %}
+  {%- if theme_banner|tobool %}
     <div class="alert alert-info">
       <span class="alert-message">{{theme_banner_msg}}</span>
     </div>
