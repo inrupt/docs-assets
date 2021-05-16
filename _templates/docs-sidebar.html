@@ -1,9 +1,26 @@
 <nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
   <div class="bd-toc-item active">
      
+     {%- if theme_versioned|tobool %}
+        {% set latest = theme_versions_list|selectattr('isLatest')|map(attribute='version')|first|e %}
+        {% if latest == theme_version %}
+     
      <p class="caption">
-       <a class="reference internal" href="{{url_root}}">{{ theme_project_title}}</a>
+       <a class="reference internal" href="https://docs.inrupt.com/{{theme_docs_project}}/latest/">{{ theme_project_title}}</a>
      </p>
+        {%- else %}
+     
+     <p class="caption">
+       <a class="reference internal" href="https://docs.inrupt.com/{{theme_docs_project}}/{{theme_version}}/">{{ theme_project_title}}</a>
+     </p>
+     
+        {% endif %}
+
+     {%- else %}
+     <p class="caption">
+       <a class="reference internal" href="https://docs.inrupt.com/{{theme_docs_project}}">{{ theme_project_title}}</a>
+     </p>
+     {% endif %}
 
     {{ generate_nav_html("sidebar",
                          startdepth=0|int,
