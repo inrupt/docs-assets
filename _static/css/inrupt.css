@@ -293,7 +293,7 @@ a.external > code.docutils > span.pre {
    line-height: 1.65; 
 }
 
-a.external > code.docutils > span.pre {
+a.external:hover > code.docutils > span.pre {
    color: rgba(var(--pst-color-link-hover),1);
 }
 
