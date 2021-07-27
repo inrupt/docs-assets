@@ -148,3 +148,10 @@ This license is copied below, and is also available with a FAQ at: http://script
 ##### Open Sans
 
 These fonts are licensed under the Apache License, Version 2.0.
+
+#### icons
+
+##### FontAwesome Free
+
+Font Awesome Free License
+https://fontawesome.com/license/free
