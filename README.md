@@ -107,7 +107,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 ### myst-parser
 
-The JS API documentation uses [myst-parser](https://github.com/executablebooks/myst-parser), which is under the MIT License:
+The JS API documentation and ESS changelog page uses [myst-parser](https://github.com/executablebooks/myst-parser), which is under the MIT License:
 
 MIT License
 
