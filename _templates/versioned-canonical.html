@@ -1,0 +1,8 @@
+{%- if theme_versioned|tobool %}
+  <!-- Make latest the canonical for versioned documents -->
+  {%- if pagename == 'index' %}
+  <link rel="canonical" href="https://docs.inrupt.com/{{theme_docs_project}}/latest/" />
+  {%- else %}
+  <link rel="canonical" href="https://docs.inrupt.com/{{theme_docs_project}}/latest/{{pagename}}/" />
+  {%- endif -%}
+{%- endif -%}
