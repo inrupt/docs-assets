@@ -1,0 +1,10 @@
+<div class="related">
+  {% if parents %}
+  <ul>
+    {%- for parent in parents %}
+      <li><a href="{{ parent.link|e }}">{{ parent.title }}</a><span class="bcpoint"> {{ reldelim1 }} </span></li>
+      {% if loop.last %}<li>{{title}}</li>{% endif %}
+    {%- endfor %}
+  </ul>
+  {% endif %}
+</div>
