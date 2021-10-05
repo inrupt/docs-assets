@@ -313,14 +313,22 @@ span.guilabel {
 
 /* Override the Prev and Next buttons styles */
 
-.prev-next-bottom {
-   margin-top: 40px;
+.prev-next-area a.left-prev {
+    border: 1px solid rgba(30, 25, 25, 0.2);
+    border-radius: 20px;
 }
 
-.prev-next-bottom a.left-prev, .prev-next-bottom a.right-next {
-   border-radius: 20px;
-   font-size: 90%;
+.prev-next-area a p.prev-next-title {
+  font-size: 1.0em;
+  font-weight: 500;
+  
 }
+
+.prev-next-area a.right-next {
+    border: 1px solid rgba(30, 25, 25, 0.2);
+    border-radius: 20px;
+}
+
 
 /* Using Caption for left hand nav - doc title caption */
 p.caption a {
