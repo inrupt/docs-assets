@@ -352,3 +352,11 @@ p.caption a {
   font-weight: 700;
 }
 
+/* For the sphinx-toggle-button (accordion/collapse button) */
+/* Override the 2.5em right */
+
+button.toggle-button { 
+  right: -1.2em;
+  top: -.5em;
+}
+
