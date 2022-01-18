@@ -360,3 +360,9 @@ button.toggle-button {
   top: -.5em;
 }
 
+/* Since using image site title, override pydata-sphinx-theme 0.8.0 release change, pr #526 */
+.navbar-brand {
+  display: inline-block;
+}
+
+
