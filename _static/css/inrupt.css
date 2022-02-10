@@ -365,4 +365,27 @@ button.toggle-button {
   display: inline-block;
 }
 
+/* For versionadded/modified/deprecated */
+/* Override the border box and bold text */
 
+span.versionmodified {
+  font-weight: 600; 
+}
+
+/* For now, keep the preceding icon */
+span.versionmodified.added::before {
+/*  content: none*/
+  color: blueviolet;
+}
+span.versionmodified.changed::before {
+  color: blueviolet;
+}
+span.versionmodified::before {
+  color: blueviolet;
+}
+
+div.deprecated, div.versionadded, div.versionchanged {
+   border: none;
+   background: none;
+   box-shadow: none;
+}
