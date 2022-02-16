@@ -365,7 +365,7 @@ button.toggle-button {
   display: inline-block;
 }
 
-/* For versionadded/modified/deprecated */
+/* For versionadded/modified */
 /* Override the border box and bold text */
 
 span.versionmodified {
@@ -384,7 +384,7 @@ span.versionmodified::before {
   color: blueviolet;
 }
 
-div.deprecated, div.versionadded, div.versionchanged {
+div.versionadded, div.versionchanged {
    border: none;
    background: none;
    box-shadow: none;
