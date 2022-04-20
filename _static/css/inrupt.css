@@ -389,3 +389,12 @@ div.versionadded, div.versionchanged {
    background: none;
    box-shadow: none;
 }
+
+/* To handle extra wide tables, like the conf options table */
+
+.table-overflow-x {
+  overflow-x: auto;
+  font-size: 0.8rem;
+
+}
+
