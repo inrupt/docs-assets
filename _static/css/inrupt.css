@@ -1,5 +1,6 @@
 .header-style, h1, h2, h3, h4, h5, h6 {
    font-family: 'Lato', Open Sans, sans-serif;
+   color: #343434;
 }
 
 h3 {
@@ -15,6 +16,9 @@ body {
    font-family: 'Lato', Open Sans, sans-serif;
 }
 
+a {
+  color: rgb(19, 6, 84);
+}
 /* add padding to top navbar */
 
 #navbar-start {
@@ -193,13 +197,28 @@ p.topic-title {
 .admonition .admonition-title {
    background-color: #fff6dd;
 }
-.admonition .admonition-title::before {
-   color: #ffc107;
+
+.admonition.note > .admonition-title::before, div.admonition.note > .admonition-title::before
+   color: #bdb7ac;
+}
+
+.admonition.note, div.admonition.note {
+  border-color: #bdb7ac;
+}
+
+.admonition.note > .admonition-title::after, div.admonition.note > .admonition-title::after {
+  
 }
 
 .admonition.tip > .admonition-title::before, div.admonition.tip > .admonition-title::before {
    color: #ffc107;
 }
+
+
+.admonition.tip > .admonition-title::after, div.admonition.tip > .admonition-title::after {
+   color: #e5f1ff;
+}
+
 
 div.admonition.tip > .admonition-title {
    color: #655e4b;
@@ -219,6 +238,10 @@ div.admonition.tip {
 .admonition.important > .admonition-title::before, div.admonition.important > .admonition-title::before
 {
    color: #ffc107;
+}
+
+.admonition.important > .admonition-title::after, div.admonition.important > .admonition-title::after {
+  color: #fef7e3;
 }
 
 div.admonition.important {
