@@ -3,6 +3,11 @@
    color: #343434;
 }
 
+
+a {
+  color: rgb(42, 105, 136);
+}
+
 h3 {
    font-size: 1.65em;
 }
@@ -16,9 +21,10 @@ body {
    font-family: 'Lato', Open Sans, sans-serif;
 }
 
-a {
-  color: rgb(19, 6, 84);
+nav.bd-links .active:hover > a, nav.bd-links .active > a {
+   color: rgb(42, 105, 136);
 }
+
 /* add padding to top navbar */
 
 #navbar-start {
@@ -191,14 +197,16 @@ p.topic-title {
 
 /* Override pydata-sphinx-theme css for admonitions */
 
-.admonition {
+/*.admonition {
    border-color: #ffc107
 }
 .admonition .admonition-title {
    background-color: #fff6dd;
 }
+*/
 
-.admonition.note > .admonition-title::before, div.admonition.note > .admonition-title::before
+/*
+.admonition.note > .admonition-title::before, div.admonition.note > .admonition-title::before {
    color: #bdb7ac;
 }
 
@@ -206,9 +214,10 @@ p.topic-title {
   border-color: #bdb7ac;
 }
 
-.admonition.note > .admonition-title::after, div.admonition.note > .admonition-title::after {
-  
+.admonition > .admonition-title::after, div.admonition > .admonition-title::after {
+  background-color:  #bdb7ac;
 }
+*/
 
 .admonition.tip > .admonition-title::before, div.admonition.tip > .admonition-title::before {
    color: #ffc107;
@@ -216,7 +225,7 @@ p.topic-title {
 
 
 .admonition.tip > .admonition-title::after, div.admonition.tip > .admonition-title::after {
-   color: #e5f1ff;
+   background-color: #e5f1ff;
 }
 
 
@@ -241,7 +250,7 @@ div.admonition.tip {
 }
 
 .admonition.important > .admonition-title::after, div.admonition.important > .admonition-title::after {
-  color: #fef7e3;
+  background-color: #fef7e3;
 }
 
 div.admonition.important {
@@ -377,11 +386,11 @@ p.caption a {
 /* For the sphinx-toggle-button (accordion/collapse button) */
 /* Override the 2.5em right */
 
-button.toggle-button { 
+/*button.toggle-button {
   right: -1.2em;
   top: -.5em;
 }
-
+*/
 /* Since using image site title, override pydata-sphinx-theme 0.8.0 release change, pr #526 */
 .navbar-brand {
   display: inline-block;
