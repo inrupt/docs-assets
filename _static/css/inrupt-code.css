@@ -1,0 +1,29 @@
+/* Adding a border to shell and javascript code blocks */
+
+.highlight-sh, .highlight-javascript {
+   border-left: 5px solid #494747;
+}
+
+/* Hiding copybutton if code-block is none */
+div.highlight-none > div > a.copybtn {
+   display: none;
+}
+
+
+/* Need for inline - otherwise, default is hot pink */
+
+.pre {
+   color: var(--inrupt-color-inline-pre);
+   font-weight: 600;
+}
+
+/* Need for inline - to also highlight white spaces */
+
+:not(pre)>*>code,
+:not(pre)>code {
+  background-color: var(--inrupt-color-inline-highlight);
+}
+
+code.descname {
+   font-size: 0.9em;
+}
