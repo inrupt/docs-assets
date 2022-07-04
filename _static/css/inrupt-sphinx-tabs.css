@@ -1,0 +1,25 @@
+/* Need for sphinx-tab light-dark-mode support */
+.sphinx-tabs-tab {
+  color: var(--inrupt-color-toggle-button);
+}
+.sphinx-tabs-tab[aria-selected="true"] {
+  background-color: var(--inrupt-color-background);
+  border-bottom: 1px solid var(--inrupt-color-background);
+}
+
+.sphinx-tabs-panel {
+  background-color: var(--inrupt-color-background);
+}
+
+
+div.sphinx-tabs > div.menu > a.item {
+    width: auto;
+    margin: 0;
+}
+
+.sphinx-tabs-tab {
+   padding: 1rem 1rem;
+   line-height: 1rem;
+   font-family: 'Lato', Open Sans, sans-serif;
+   font-size: 14px;
+}

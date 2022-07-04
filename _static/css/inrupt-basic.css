@@ -1,0 +1,95 @@
+.header-style, h1, h2, h3, h4, h5, h6, body {
+   font-family: 'Lato', Open Sans, sans-serif;
+   color: var(--inrupt-color-headers);
+}
+
+h3 {
+   font-size: 1.65em;
+}
+
+h4 {
+   font-size: 1.25em;
+}
+
+body {
+  background-color: var(--inrupt-color-background);
+}
+
+
+/* For the breadcrumb at top of page*/
+
+div.related {
+   margin-bottom: 5px;
+}
+div.related ul {
+   padding: 0 0 0 2px;
+}
+
+.guilabel {
+   font-style: normal;
+   font-weight: bold;
+}
+
+span.guilabel {
+   padding: 2px;
+   border: none;
+}
+
+.alert {
+   padding-bottom: 0.75rem;
+}
+
+
+
+p.topic-title {
+   margin-top: 0px;
+}
+
+.purple {
+   color: #683e7a;
+}
+
+.epigraph {
+   font-style: italic;
+   background-color: #dcdcdc66;
+}
+
+
+dl.option {
+   font-size: medium;
+}
+
+.footer {
+   text-align: center;
+}
+
+
+span.versionmodified {
+  font-weight: 600; 
+}
+
+/* For now, keep the preceding icon */
+span.versionmodified.added::before {
+/*  content: none*/
+  color: blueviolet;
+}
+span.versionmodified.changed::before {
+  color: blueviolet;
+}
+span.versionmodified::before {
+  color: blueviolet;
+}
+
+div.versionadded, div.versionchanged {
+   border: none;
+   background: none;
+   box-shadow: none;
+}
+
+
+@media (min-width: 978px) {
+   .navbar-expand-lg .navbar-nav .nav-link {
+      padding-right: 1rem;
+      padding-left: 1rem;
+   }
+}

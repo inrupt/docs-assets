@@ -1,0 +1,7 @@
+.toggle-button {
+  color: var(--inrupt-color-toggle-button);
+}
+
+details.toggle-details {
+  color: #262626;
+}
