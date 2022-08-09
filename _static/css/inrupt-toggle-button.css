@@ -5,3 +5,8 @@
 details.toggle-details {
   color: #262626;
 }
+
+details.toggle-details summary {
+  width: fit-content;
+  border: 1px solid #1976d2;
+}
