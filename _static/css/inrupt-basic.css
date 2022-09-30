@@ -66,8 +66,9 @@ p.topic-title {
 
 .epigraph {
    font-style: italic;
-   background-color: #dcdcdc66;
+   background-color: var(--inrupt-color-epigraph);
 }
+
 
 
 dl.option {
@@ -111,4 +112,14 @@ aside.footnote-list, aside.footnote {
       padding-right: 1rem;
       padding-left: 1rem;
    }
+}
+
+
+.bd-sidebar-primary {
+  background-color: var(--inrupt-color-background);
+}
+
+.bd-main .bd-content .bd-article-container {
+  flex-grow: 1;
+  max-width: 100%;
 }

@@ -32,3 +32,7 @@ a.external:hover > code.docutils > span.pre {
    color: rgba(var(--pst-color-link-hover),1);
 }
 */
+
+a:hover {
+  color: var(--inrupt-color-link-hover);
+}

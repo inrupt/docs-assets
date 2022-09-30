@@ -27,23 +27,41 @@ p.caption a {
 
 
 /* Add border and padding to left hand toc sections */
+
 .toctree-l1 {
     border-top: 1px solid #e0e7e8;
     padding-top: .5rem;
     padding-bottom: .5rem;
 }
 
-
-.toc-entry a {
+/*nav.bd-links li > a {
   color: var(--inrupt-color-link);
 }
 
-.toc-entry a:hover {
+nav.bd-links li > a:hover {
+  color: var(--inrupt-color-link-hover);
+}
+
+
+.navbar-nav li a {
   color: var(--inrupt-color-link);
 }
 
-.toc-entry > .nav-link.active {
-  color: var(--inrupt-color-link);
-  border-left: 2px solid var(--inrupt-color-link);
+.navbar-nav li a:hover {
+    color: var(--inrupt-color-link-hover);
 }
 
+.navbar-nav li.current > a, .navbar-nav li a:focus {
+  color: var(--inrupt-color-link);
+}
+
+.navbar-nav li a:hover {
+  color: var(--inrupt-color-link);
+}
+*/
+
+
+
+
+
+*/

@@ -1,0 +1,8 @@
+.bd-sidebar-secondary {
+  background-color: var(--inrupt-color-background);
+}
+
+.bd-sidebar-secondary .onthispage {
+  color: var(--pst-color-text-base);
+  margin-bottom: 2rem;
+}
