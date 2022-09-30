@@ -27,3 +27,7 @@ div.highlight-none > div > a.copybtn {
 code.descname {
    font-size: 0.9em;
 }
+
+code.literal {
+  border:none;
+}

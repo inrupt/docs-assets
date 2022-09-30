@@ -70,6 +70,7 @@ p.topic-title {
 }
 
 
+
 dl.option {
    font-size: medium;
 }
@@ -111,4 +112,17 @@ aside.footnote-list, aside.footnote {
       padding-right: 1rem;
       padding-left: 1rem;
    }
+}
+
+
+.bd-sidebar-primary {
+  background-color: var(--inrupt-color-background);
+}
+.bd-sidebar-secondary {
+  background-color: var(--inrupt-color-background);
+}
+
+.bd-main .bd-content .bd-article-container {
+  flex-grow: 1;
+  max-width: 100%;
 }

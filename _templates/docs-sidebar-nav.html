@@ -1,0 +1,20 @@
+<!-- Basically, a copy of the theme's sidebar-nav-bs but override the definition of sidebar_nav_html  -->
+<!-- The original definition of sidebar_nav_html is in the layout.html. It generates the section nav instead of root of doc. -->
+
+{%- set sidebar_nav_html = generate_toctree_html("sidebar",
+    startdepth=0|int,
+    show_nav_level=theme_show_nav_level|int,
+    maxdepth=theme_navigation_depth|int,
+    collapse=theme_collapse_navigation|tobool,
+    includehidden=True,
+    titles_only=True)
+-%}
+
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+  <p class="bd-links__title" role="heading" aria-level="1">
+    <a class="reference internal" href="{{ pathto(master_doc) }}">{{ theme_project_title}}</a>
+  </p>
+  <div class="bd-toc-item navbar-nav">
+    {{ sidebar_nav_html }}
+  </div>
+</nav>

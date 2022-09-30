@@ -1,7 +1,5 @@
 {% extends "pydata_sphinx_theme/layout.html" %}
 
-{% set css_files = css_files + [ "_static/css/inrupt.css" ] %}
-
 {%- block extrahead %}
   {% if theme_robots_index|tobool %}
   <meta name="robots" content="index" />
@@ -20,9 +18,10 @@
 {%- endblock %}
 
 {% block docs_body %}
- 
+
   {% include "breadcrumb-navigation.html" %}
-  
+
+  <!-- Using custom banner instead of theme's announcements setting-->
   {%- if theme_banner|tobool %}
     <div class="alert alert-info">
       <span class="alert-message">{{theme_banner_msg}}</span>
@@ -31,4 +30,4 @@
 
   {{ super() }}
 
-{% endblock %}
+{% endblock %} -->
