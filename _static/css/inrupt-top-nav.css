@@ -42,3 +42,21 @@
   display: inline-block;
 }
 
+.bd-header .navbar-nav li a.nav-link:hover {
+  color: var(--inrupt-color-link-hover);
+}
+
+.bd-header .navbar-nav .dropdown button:hover {
+  color: var(--inrupt-color-link-hover);
+}
+
+
+.bd-header .navbar-nav .dropdown .dropdown-menu a.nav-link:hover{
+  color: var(--inrupt-color-link-hover);
+}
+
+.bd-header .dropdown-menu li.nav-item:hover {
+  background-color: #f3f3f3;
+  text-decoration: underline solid var(--inrupt-color-link-hover)
+}
+

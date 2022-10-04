@@ -52,4 +52,3 @@ div.admonition.warning {
 .admonition.warning > .admonition-title::after, div.admonition.warning > .admonition-title::after {
    color: var(--inrupt-color-warning);
 }
-

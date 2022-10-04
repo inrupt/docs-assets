@@ -102,6 +102,10 @@ div.versionadded, div.versionchanged {
    box-shadow: none;
 }
 
+div.versionchanged p::before {
+    background-color: var(--inrupt-color-version);
+}
+
 aside.footnote-list, aside.footnote {
   font-size: 0.9rem;
   

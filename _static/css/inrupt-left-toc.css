@@ -25,6 +25,10 @@ p.caption a {
    text-align: left;
 }
 
+nav.bd-links p.bd-links__title {
+  text-transform: uppercase;
+  font-size: 13px;
+}
 
 /* Add border and padding to left hand toc sections */
 
@@ -34,7 +38,8 @@ p.caption a {
     padding-bottom: .5rem;
 }
 
-/*nav.bd-links li > a {
+
+nav.bd-links li > a {
   color: var(--inrupt-color-link);
 }
 
@@ -56,12 +61,6 @@ nav.bd-links li > a:hover {
 }
 
 .navbar-nav li a:hover {
-  color: var(--inrupt-color-link);
+  color: var(--inrupt-color-link-hover);
 }
-*/
 
-
-
-
-
-*/

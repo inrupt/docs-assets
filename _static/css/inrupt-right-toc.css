@@ -6,3 +6,15 @@
   color: var(--pst-color-text-base);
   margin-bottom: 2rem;
 }
+
+.bd-sidebar-secondary  .toc-entry a.nav-link {
+  color: var(--inrupt-color-link);
+}
+
+.bd-sidebar-secondary  .toc-entry a.nav-link:hover {
+  color: var(--inrupt-color-link-hover);
+}
+
+.bd-sidebar-secondary  .toc-entry a.nav-link.active {
+  border-left: 2px solid var(--inrupt-color-link);
+}

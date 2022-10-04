@@ -15,6 +15,7 @@
    --inrupt-color-warning-bg: #d94b4b;
    --inrupt-color-warning: #c44539;
    --inrupt-color-epigraph: #dcdcdc66;
+   --inrupt-color-version: #6b4875;
 }
 
 
@@ -34,5 +35,6 @@ html[data-theme="dark"] {
   --inrupt-color-tip-bg:  #bb34f9;
   --inrupt-color-warning: #ae7d7d;
   --inrupt-color-warning-bg: #d94b4b;
-   --inrupt-color-epigraph: #3c3c30;
+  --inrupt-color-epigraph: #3c3c30;
+  --inrupt-color-version: #fd52f2;
 }
