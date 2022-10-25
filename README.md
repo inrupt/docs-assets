@@ -159,17 +159,19 @@ SOFTWARE.
 
 #### Fonts
 
+##### Mulish
+
+Copyright 2016 The Mulish Project Authors (https://github.com/googlefonts/mulish)
+This Font Software is licensed under the SIL Open Font License, Version 1.1.
+
 ##### Lato
 
 Copyright (c) 2010-2014, Łukasz Dziedzic (dziedzic@typoland.com),
 with Reserved Font Name Lato.
 
 This Font Software is licensed under the SIL Open Font License, Version 1.1.
-This license is copied below, and is also available with a FAQ at:
 http://scripts.sil.org/OFL
 
-This Font Software is licensed under the SIL Open Font License, Version 1.1.
-This license is copied below, and is also available with a FAQ at: http://scripts.sil.org/OFL
 
 ##### Open Sans
 
