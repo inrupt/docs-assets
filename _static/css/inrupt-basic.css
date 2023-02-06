@@ -103,7 +103,7 @@ span.versionmodified::before {
 
 div.versionadded, div.versionchanged {
    border: none;
-   background: none;
+   background-color: none;
    box-shadow: none;
 }
 
