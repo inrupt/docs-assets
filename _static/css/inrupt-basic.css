@@ -104,7 +104,12 @@ span.versionmodified::before {
 div.versionadded, div.versionchanged {
    border: none;
    background-color: none;
-   box-shadow: none;
+}
+
+
+div.versionadded p::before {
+    background-color: var(--inrupt-color-version);
+    padding: 0;
 }
 
 div.versionchanged p::before {
