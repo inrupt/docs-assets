@@ -4,7 +4,7 @@
        -->
     {% set latest = theme_docs_versions_list|selectattr('isLatest')|map(attribute='version')|first|e %}
     {% set upcoming = theme_docs_versions_list|selectattr('isUpcoming')|map(attribute='version')|first|e %}
-    Version {{ theme_docs_version }} {% if latest == theme_docs_version %} (Latest) {% endif %}  {% if upcoming == theme_docs_version %} (isUpcoming) {% endif %}
+    Version {{ theme_docs_version }} {% if latest == theme_docs_version %} (Latest) {% endif %}  {% if upcoming == theme_docs_version %} (Upcoming) {% endif %}
   </button>
   <ul class="dropdown-menu" role="menu">
     {% for v in theme_docs_versions_list %}
@@ -13,7 +13,7 @@
         else %} href="https://docs.inrupt.com/{{ theme_docs_project }}/{{ v.version }}/" {% endif %} {% else %} {% if v.isLatest %}
         href="https://docs.inrupt.com/{{ theme_docs_project }}/latest/{{pagename}}/" {% else %}
         href="https://docs.inrupt.com/{{ theme_docs_project }}/{{ v.version }}/{{pagename}}/" {% endif %} {% endif %}>
-        Version {{ v.version|e }} {% if v.isLatest %} (Latest) {% endif %}  {% if v.upcoming %} (Upcoming) {% endif %}
+        Version {{ v.version|e }} {% if v.isLatest %} (Latest) {% endif %}  {% if v.isUpcoming %} (Upcoming) {% endif %}
       </a>
     </li>
     {% endfor %}
