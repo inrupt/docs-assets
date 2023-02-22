@@ -3,8 +3,8 @@
     <!-- For now hardcode.  Later, can finesse to read a generic label
        -->
     {% set latest = theme_docs_versions_list|selectattr('isLatest')|map(attribute='version')|first|e %}
-    {% set alpha = theme_docs_versions_list|selectattr('isAlpha')|map(attribute='version')|first|e %}
-    Version {{ theme_docs_version }} {% if latest == theme_docs_version %} (Latest) {% endif %}  {% if alpha == theme_docs_version %} (Alpha) {% endif %}
+    {% set upcoming = theme_docs_versions_list|selectattr('isUpcoming')|map(attribute='version')|first|e %}
+    Version {{ theme_docs_version }} {% if latest == theme_docs_version %} (Latest) {% endif %}  {% if upcoming == theme_docs_version %} (isUpcoming) {% endif %}
   </button>
   <ul class="dropdown-menu" role="menu">
     {% for v in theme_docs_versions_list %}
@@ -13,7 +13,7 @@
         else %} href="https://docs.inrupt.com/{{ theme_docs_project }}/{{ v.version }}/" {% endif %} {% else %} {% if v.isLatest %}
         href="https://docs.inrupt.com/{{ theme_docs_project }}/latest/{{pagename}}/" {% else %}
         href="https://docs.inrupt.com/{{ theme_docs_project }}/{{ v.version }}/{{pagename}}/" {% endif %} {% endif %}>
-        Version {{ v.version|e }} {% if v.isLatest %} (Latest) {% endif %}  {% if v.isAlpha %} (Alpha) {% endif %}
+        Version {{ v.version|e }} {% if v.isLatest %} (Latest) {% endif %}  {% if v.upcoming %} (Upcoming) {% endif %}
       </a>
     </li>
     {% endfor %}
