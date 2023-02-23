@@ -1,6 +1,22 @@
 .version-button {
   border-radius: 2px;
   color: var(--inrupt-color-toggle-button);
+  width: 95%;
+  text-align: left;
+}
+
+div.version-sidebar {
+  width: 95%;
+}
+
+div.version-sidebar > ul.dropdown-menu {
+  min-width: 12rem;
+}
+
+div.version-sidebar > button.dropdown-toggle::after {
+  border-left: .5em solid transparent;
+  border-right: .5em solid transparent;
+  border-top: .5em solid;
 }
 
 .version-selector {
