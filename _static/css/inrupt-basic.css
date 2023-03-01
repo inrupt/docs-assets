@@ -30,9 +30,6 @@ h5 {
    font-size: 1.15em;
 }
 
-html {
-  font-size: 15px;
-}
 
 body {
   background-color: var(--inrupt-color-background);
