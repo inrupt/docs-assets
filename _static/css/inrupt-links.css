@@ -1,5 +1,6 @@
 a, a.headerlink {
   color: var(--inrupt-color-link);
+  text-decoration: none;
 }
 
 a.internal > code > span.pre {
@@ -33,6 +34,12 @@ a.external:hover > code.docutils > span.pre {
 }
 */
 
-a:hover {
+a:active, a:visited {
+  color: var(--inrupt-color-link);
+}
+
+a:hover, a:visited:hover {
   color: var(--inrupt-color-link-hover);
 }
+
+
