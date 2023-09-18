@@ -18,3 +18,12 @@
 .prev-next-area a p.prev-next-title {
   color: var(--inrupt-color-link);
 }
+
+.prev-next-area a p.prev-next-title:active, .prev-next-area a p.prev-next-title:visited {
+  color: var(--inrupt-color-link);
+}
+
+.prev-next-area a:hover p.prev-next-title:hover {
+  color: var(--inrupt-color-link-hover);
+  text-decoration: underline solid currentcolor auto;
+}

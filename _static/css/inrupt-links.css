@@ -40,6 +40,7 @@ a:active, a:visited {
 
 a:hover, a:visited:hover {
   color: var(--inrupt-color-link-hover);
+  text-decoration: underline solid currentcolor auto;
 }
 
 
