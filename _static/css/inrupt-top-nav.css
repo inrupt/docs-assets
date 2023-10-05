@@ -17,6 +17,11 @@
     left: 50%;
     transform: translateX(-50%);
   }
+  .bd-navbar-elements {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }
 
 
