@@ -8,20 +8,19 @@
    --inrupt-color-toggle-button: black;
    --inrupt-color-inline-pre: #262626;
    --inrupt-color-admonition-text: rgb(51,51,51);
-   --inrupt-color-important: #ffc106;
-   --inrupt-color-important-bg: #f9e07b;
+   --inrupt-color-important: #ffc107;
+   --inrupt-color-important-bg:  #fec406;
    --inrupt-color-tip: #8b28a7;
-   --inrupt-color-tip-bg:  #d396ef;
-   --inrupt-color-warning-bg: #fe837d;
-   --inrupt-color-warning: #a42317;
+   --inrupt-color-tip-bg:  #6b2b88;
+   --inrupt-color-warning-bg: #d94b4b;
+   --inrupt-color-warning: #c44539;
    --inrupt-color-epigraph: #dcdcdc66;
    --inrupt-color-version: #6b4875;
-   --inrupt-color-prev-next-border: rgba(30, 25, 25, 0.2);
 }
 
 
 html[data-theme="dark"] {
-  --inrupt-color-background: #353535;
+  --inrupt-color-background: #262626;
   --inrupt-color-headers: rgb(205, 205, 205); /* #886b6b;  */
   --inrupt-color-link: rgb(206,157,138);
   --inrupt-color-link-hover: #ff9800;  
@@ -29,15 +28,13 @@ html[data-theme="dark"] {
   --inrupt-color-table: #b1b8bf;  
   --inrupt-color-toggle-button: white;
   --inrupt-color-inline-pre: white;
-  --inrupt-color-admonition-text: rgb(144,153,153);
+  --inrupt-color-admonition-text: rgb(205, 205, 205);
   --inrupt-color-important: #9d9b8a;
   --inrupt-color-important-bg:  #fef7e3;
   --inrupt-color-tip: #831fb0;
-  --inrupt-color-tip-bg: #974eb9;
+  --inrupt-color-tip-bg:  #bb34f9;
   --inrupt-color-warning: #ae7d7d;
-  --inrupt-color-warning-bg: #912d2d;
+  --inrupt-color-warning-bg: #d94b4b;
   --inrupt-color-epigraph: #3c3c30;
   --inrupt-color-version: #fd52f2;
-  --inrupt-color-prev-next-border: rgb(205, 205, 205);
-
 }
