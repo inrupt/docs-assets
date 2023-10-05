@@ -2,47 +2,6 @@
   color: #00dbff
 }
 
-/* Top Nav Header > Client Libraries dropdown, hide by default */
-
-ul.navbar-nav ul.nav-children {
-   display: none;
-   padding-top: .2rem;
-   padding-left: 0;
-   position: absolute;
-   list-style: none;
-}
-
-/* Top Nav Header > Client Libraries dropdown, display during hover */
-
-ul.navbar-nav li.nav-item:hover ul.nav-children {
-   display: block;
-   background-color: #fff;
-}
-
-li.nav-childitem {
-   padding-top: .2rem;
-}
-
-li.nav-childitem:hover {
-   background-color: #f3f3f3;
-}
-
-li.nav-childitem > a {
-   color: #130654;
-   padding-left: .5rem;
-}
-
-nav.bd-links li > a {
-  color: var(--inrupt-color-link);
-}
-
-nav.bd-links li > a:hover {
-  color: var(--inrupt-color-link-hover);
-}
-
-nav.bd-links .active:hover > a, nav.bd-links .active > a {
-  color: var(--inrupt-color-nav);
-}
 
 /* add padding to top navbar */
 
