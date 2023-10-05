@@ -29,8 +29,7 @@ button.version-button {
 }
 
 .bd-search input {
-  background-color: var(--pst-color-background);
-  border-radius: 0;
+  background-color: var(--inrupt-color-background);
 }
 
 .spacing {
@@ -81,6 +80,3 @@ nav.bd-links li > a:hover {
   color: var(--inrupt-color-link-hover);
 }
 
-nav.bd-links .current > a {
-  box-shadow: inset max(3px,.1875rem,.12em) 0 0 var(--inrupt-color-link);
-}

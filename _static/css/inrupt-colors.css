@@ -21,7 +21,7 @@
 
 
 html[data-theme="dark"] {
-  --inrupt-color-background: #262626; /* #353535; */
+  --inrupt-color-background: #353535;
   --inrupt-color-headers: rgb(205, 205, 205); /* #886b6b;  */
   --inrupt-color-link: rgb(206,157,138);
   --inrupt-color-link-hover: #ff9800;  
