@@ -3,7 +3,6 @@
 .sphinx-tabs-tab[aria-selected="true"] {
   border-bottom: 2px solid var(--inrupt-color-background);
   background-color: var(--inrupt-color-background);
-  margin-right: 0;
 }
 
 .sphinx-tabs-panel {
