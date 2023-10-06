@@ -63,3 +63,6 @@
   text-decoration: underline solid var(--inrupt-color-link-hover)
 }
 
+.bd-header .navbar-nav .dropdown .dropdown-menu {
+  padding-left: .5rem
+}
