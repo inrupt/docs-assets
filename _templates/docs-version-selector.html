@@ -1,5 +1,5 @@
 <div class="btn-group version-sidebar">
-  <button type="button" class="version-button dropdown-toggle" data-toggle="dropdown">
+  <button type="button" class="version-button dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
     <!-- For now hardcode.  Later, can finesse to read a generic label
        -->
     {% set latest = theme_docs_versions_list|selectattr('isLatest')|map(attribute='version')|first|e %}
