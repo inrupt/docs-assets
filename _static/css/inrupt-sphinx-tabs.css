@@ -1,10 +1,11 @@
 /* Need for sphinx-tab light-dark-mode support */
 .sphinx-tabs-tab {
   color: var(--inrupt-color-toggle-button);
-}
-.sphinx-tabs-tab[aria-selected="true"] {
   background-color: var(--inrupt-color-background);
-  border-bottom: 1px solid var(--inrupt-color-background);
+}
+
+.sphinx-tabs-tab[aria-selected="true"] {
+  border-bottom: 2px solid var(--inrupt-color-background);
 }
 
 .sphinx-tabs-panel {
