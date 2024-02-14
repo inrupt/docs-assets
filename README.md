@@ -133,7 +133,7 @@ SOFTWARE.
 
 ### myst-parser
 
-The JS API documentation and ESS changelog page uses [myst-parser](https://github.com/executablebooks/myst-parser), which is under the MIT License:
+The JS API documentation uses [myst-parser](https://github.com/executablebooks/myst-parser), which is under the MIT License:
 
 MIT License
 
@@ -156,6 +156,10 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+### PyYAML
+
+The documentation uses [PyYAML](https://pypi.org/project/PyYAML/), which is under the MIT License.
 
 #### Fonts
 
