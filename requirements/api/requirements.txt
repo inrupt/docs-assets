@@ -1,0 +1,15 @@
+# pip install -r requirements.txt
+
+pydata-sphinx-theme==0.15.2
+myst-parser==2.0.0
+Sphinx==7.2.6
+
+# Need the following for Vercel builds. 
+# Vercel uses Amazon Linux 2 (with OpenSSL 1.0.2k-fips).
+# https://github.com/orgs/vercel/discussions/5643
+# but urllib3 v2.0 only supports OpenSSL 1.1.1+
+#
+# See also: 
+# https://github.com/urllib3/urllib3/issues/2168, 
+# https://github.com/psf/requests/releases/tag/v2.30.0
+urllib3<2
