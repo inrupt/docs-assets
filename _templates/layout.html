@@ -12,22 +12,9 @@
   {% include "jira-feedback.html" %}
 
   {% include "googleanalytics.html" %}
-  
-  {% include "matomo.html" %}
 
   {% include "versioned-canonical.html" %}
 
 {%- endblock %}
 
-{% block docs_body %}
 
-  <!-- Using custom banner instead of theme's announcements setting-->
-  {%- if theme_banner|tobool %}
-    <div class="alert alert-info">
-      <span class="alert-message">{{theme_banner_msg}}</span>
-    </div>
-  {%- endif %}
-
-  {{ super() }}
-
-{% endblock %} -->
