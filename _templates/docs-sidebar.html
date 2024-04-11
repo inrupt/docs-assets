@@ -15,9 +15,11 @@
   <p class="bd-links__title" role="heading" aria-level="1">
     <a class="reference internal" href="{{ pathto(master_doc) }}">{{ theme_project_title}}</a>
   </p>
-  <div>
-   {%- include 'version-switcher.html' -%}
-  </div>
+  {%- if theme_versioned|tobool %}
+     <div>
+     {%- include 'version-switcher.html' -%}
+     </div>
+  {%- endif -%} 
   <div class="search-form">
    {%- include 'search-field.html' -%}
   </div>
