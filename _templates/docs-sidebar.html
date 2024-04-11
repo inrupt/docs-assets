@@ -1,5 +1,6 @@
 <!-- Basically, a copy of the theme's sidebar-nav-bs but override the definition of sidebar_nav_html  -->
 <!-- The original definition of sidebar_nav_html is in the layout.html. It generates the section nav instead of root of doc. -->
+<!-- Also, including version-switcher and search-filed components here instead of in conf.py -->
 
 {%- set sidebar_nav_html = generate_toctree_html("sidebar",
     startdepth=0|int,
@@ -10,10 +11,16 @@
     titles_only=True)
 -%}
 
-<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+<nav class="bd-links bd-docs-nav" aria-label="Main navigation">
   <p class="bd-links__title" role="heading" aria-level="1">
     <a class="reference internal" href="{{ pathto(master_doc) }}">{{ theme_project_title}}</a>
   </p>
+  <div>
+   {%- include 'version-switcher.html' -%}
+  </div>
+  <div class="search-form">
+   {%- include 'search-field.html' -%}
+  </div>
   <div class="bd-toc-item navbar-nav">
     {{ sidebar_nav_html }}
   </div>
