@@ -17,4 +17,16 @@
 
 {%- endblock %}
 
+{% block docs_body %}
 
+
+  <!-- If using custom banner instead of theme's announcements setting-->
+  {%- if theme_banner|tobool %}
+    <div class="alert alert-info">
+      <span class="alert-message">{{theme_banner_msg}}</span>
+    </div>
+  {%- endif %}
+
+  {{ super() }}
+
+{% endblock %} -->
