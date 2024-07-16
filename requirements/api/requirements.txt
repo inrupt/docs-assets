@@ -2,7 +2,7 @@
 
 pydata-sphinx-theme==0.15.4
 myst-parser==3.0.1
-Sphinx==7.4.4
+Sphinx==7.4.5
 
 # Need the following for Vercel builds. 
 # Vercel uses Amazon Linux 2 (with OpenSSL 1.0.2k-fips).
