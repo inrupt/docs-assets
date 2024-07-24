@@ -1,6 +1,9 @@
 .table {
   color: var(--inrupt-color-table);
 }
+.table > :not(caption) {
+  color: var(--inrupt-color-table);
+}
 
 /* Need for tables in dirhtml pages */
 table.docutils {
