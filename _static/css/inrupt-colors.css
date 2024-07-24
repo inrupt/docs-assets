@@ -4,6 +4,7 @@
    --inrupt-color-link: #0D6796;
    --inrupt-color-link-hover: #ff9800;
    --inrupt-color-nav: rgb(63, 128, 159);
+   --inrupt-color-nav-item: #48566b;
    --inrupt-color-table: black;
    --inrupt-color-toggle-button: black;
    --inrupt-color-inline-pre: #262626;
@@ -26,6 +27,7 @@ html[data-theme="dark"] {
   --inrupt-color-link: rgb(206,157,138);
   --inrupt-color-link-hover: #ff9800;  
   --inrupt-color-nav: #e6eff4;
+  --inrupt-color-nav-item: #9ca4af;
   --inrupt-color-table: #b1b8bf;  
   --inrupt-color-toggle-button: white;
   --inrupt-color-inline-pre: white;
