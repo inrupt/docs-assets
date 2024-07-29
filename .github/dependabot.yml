@@ -8,12 +8,12 @@ updates:
   - package-ecosystem: "pip" # See documentation for possible values
     directory: "/requirements/ess/" # Location of package manifests
     schedule:
-      interval: "daily"
+      interval: "monthly"
   - package-ecosystem: "pip" # See documentation for possible values
     directory: "/requirements/general/" # Location of package manifests
     schedule:
-      interval: "daily"
+      interval: "monthly"
   - package-ecosystem: "pip" # See documentation for possible values
     directory: "/requirements/api/" # Location of package manifests
     schedule:
-      interval: "daily"
+      interval: "monthly"
