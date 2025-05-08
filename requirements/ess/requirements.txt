@@ -8,3 +8,4 @@ pydata-sphinx-theme==0.16.1
 sphinx-togglebutton==0.3.2
 jira
 pyyaml
+snowballstemmer==2.2.0
